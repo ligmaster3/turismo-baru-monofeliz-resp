@@ -13,19 +13,20 @@ body {
 }
 header {
   background-color: rgba(34, 34, 182, 0.332);
-  background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/ed/f5/7d/refugio-ecologico-mono.jpg?w=700&h=-1&s=1");
+  background-image: url("https://www.travelaficionados.com/wp-content/uploads/2015/07/Panama-112-500x335.jpg");
+  /* background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/ed/f5/7d/refugio-ecologico-mono.jpg?w=700&h=-1&s=1"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 header {
   position: relative;
 }
 header .nav-bar {
   position: fixed;
-  max-width: 1200px;
+  max-width: 1700px;
   padding: 1rem;
   width: 100%;
   height: 60px;
@@ -46,13 +47,13 @@ header .nav-bar {
 
 .nav-bar .logo {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 22px;
 }
 .nav-bar .logo a {
   color: white;
   list-style: none;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 header .nav-bar .links {
   display: flex;
@@ -69,7 +70,7 @@ header .nav-bar .links {
 header ul li a {
   color: white;
   display: block;
-  font-size: 18px;
+  font-size: 22px;
   margin: 7px;
   margin-inline-start: 55px;
   padding: 10px 15px;
@@ -109,6 +110,9 @@ header .nav-bar .links li a:hover {
 }
 /* Responsive */
 @media (max-width: 998px) {
+  header{
+width: 100%;
+  }
   header .nav-bar .links {
     display: none;
   }
