@@ -6,11 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdown.classList.toggle("open");
   });
 
-  
- const header = document.querySelector("#header");
- const navbar = document.querySelector("#navbar");
- const body = document.querySelector("body");
-
- 
-  
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > $("#header").height()) {
+        $("#navbar").addClass("sticky-nav"); // Reemplaza 
+      } else {
+        $("#navbar").removeClass("sticky-nav"); // Elimina 
+       
+      }
+    });
+  });
 });
