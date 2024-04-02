@@ -110,8 +110,8 @@ header .nav-bar .links li a:hover {
 }
 /* Responsive */
 @media (max-width: 998px) {
-  header{
-width: 100%;
+  header {
+    width: 100%;
   }
   header .nav-bar .links {
     display: none;
@@ -131,8 +131,125 @@ width: 100%;
   }
 }
 @media (max-width: 576px) {
-.sub-menu{
-  left: 2rem;
-  width: unset;
+  .sub-menu {
+    top: 66px;
+    left: 2rem;
+    width: unset;
+    right: 48px;
+  }
 }
+
+/* Contenido del main */
+.conteiner-lg {
+  color: white;
+  display: flex;
+  /* background: linear-gradient(
+    45deg,
+    #3248b8,
+    #55518c,
+    #3e2baa,
+    #256598,
+    #0f363c,
+    #4f1ffd
+  ); */
+}
+.conteiner-lg img {
+  height: 200px;
+  width: 300px;
+}
+.conteiner-lg p {
+  display: flex;
+  margin: auto;
+  font-weight: bold;
+  padding: 12px;
+}
+.img-top {
+  border-bottom-right-radius: 40px;
+  box-shadow: solid 5px rgb(0, 0, 0);
+}
+.sub-conteiner,.conteiner-lg{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.img-obj img {
+  width: 300px;
+}
+.sub-conteiner section,
+.descripcion {
+  background-color: #3333;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner-sm {
+  display: flex;
+  position: relative;
+}
+.conteiner-sm .text-img-sm {
+  position: absolute;
+  left: 123px;
+  top: 28px;
+  color: white;
+  transform: translate(-50%, -50%);
+  background-color: rgba(48, 43, 43, 0.7);
+  padding: 10px;
+  width: 246px;
+  font-size: 24px;
+}
+.carousel {
+  width: 124vh;
+  margin-left: 4rem;
+}
+.ubicacion-conteiner {
+  max-width: 100%;
+  position: relative;
+  width: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+.card-ubi-text {
+  display: block;
+}
+/* RESPONSIVE DEL INDEX */
+@media (max-width: 1040px) {
+  .conteiner-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .conteiner-lg img {
+    width: 257px;
+  }
+  .conteiner-lg p {
+    padding-bottom: 35px;
+  }
+  .conteiner-lg .descripcion,
+  h1,
+  p {
+    padding: 12px;
+  }
+  .img-top {
+    border: none;
+  }
+  .sub-conteiner,section {
+    margin: 0;
+  }
+  .conteiner-sm {
+    display: block;
+    padding-bottom: 35px;
+  }
+  .conteiner-sm img {
+    width: 280px;
+  }
+  .card-ubi iframe {
+    width: 300px;
+    height: 150px;
+  }
+  .carousel {
+    width: auto;
+    margin: 0;
+  }
+}
+.fa-play {
+  color: yellowgreen;
 }
