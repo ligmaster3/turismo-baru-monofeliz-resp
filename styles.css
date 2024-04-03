@@ -427,7 +427,7 @@ header .nav-bar .links li a:hover {
   .footer-item {
     display: flex;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     flex-wrap: wrap;
   }
   .item:hover .item-body {
