@@ -112,12 +112,11 @@ header .nav-bar .links li a:hover {
   max-width: 700px;
   color: #fff;
   padding: 40%;
-
 }
 .wrap-hero-section h1 {
   position: absolute;
-  font-weight: bold; 
-  font-size: 66px; 
+  font-weight: bold;
+  font-size: 66px;
   top: 200px;
 }
 /* Responsive */
@@ -312,7 +311,7 @@ header .nav-bar .links li a:hover {
     display: block;
   }
   .centro-2 {
-    border-bottom-left-radius:0;
+    border-bottom-left-radius: 0;
   }
   .nav {
     display: none;
@@ -358,9 +357,10 @@ header .nav-bar .links li a:hover {
 }
 .item {
   position: relative;
-  width: 190px;
+  width: 10rem;
   height: 254px;
   display: flex;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   margin: 10px;
@@ -424,14 +424,28 @@ header .nav-bar .links li a:hover {
 }
 
 @media (max-width: 1040px) {
+  footer {
+   max-width: 100%;
+    row-gap: 1rem;
+  }
   .footer-item {
-    display: flex;
-    width: 100%;
-    padding: 1rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(7.25rem, 100%), 1fr));
+    grid-gap: 1rem;
+    padding: 12px;
+  }
+  .item {
+    width: 8rem;
+    margin: 5px;
+  }
+  .item:hover {
+    height: 265px;
+    width: 8rem;
+    overflow: hidden;
   }
   .item:hover .item-body {
-    height: 300xp;
+    height: 200px;
+    width: 200px;
   }
   .item .item-body a {
     width: 20px;
