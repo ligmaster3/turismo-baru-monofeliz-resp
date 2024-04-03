@@ -247,7 +247,7 @@ header .nav-bar .links li a:hover {
 }
 
 .carousel {
-  margin: 4rem;
+  margin-left: 4rem;
 }
 .ubicacion-conteiner {
   max-width: 100%;
@@ -399,3 +399,24 @@ header .nav-bar .links li a:hover {
 .item-body a i {
   color: white;
 }
+
+@media (max-width: 1040px){
+.footer-item {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.item:hover .item-body {
+  height: 300xp;
+}
+.item .item-body a  {
+  width: 20px;
+}
+.item .item-body h5 {
+  font-size: 14px;
+}
+
+}
+  
+
