@@ -13,7 +13,7 @@ body {
 }
 header {
   background-color: rgba(34, 34, 182, 0.332);
-  background-image: url("https://www.travelaficionados.com/wp-content/uploads/2015/07/Panama-112-500x335.jpg"); 
+  background-image: url("img/img-minos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -140,6 +140,7 @@ header .nav-bar .links li a:hover {
 
 /* Contenido del main */
 .conteiner-lg {
+  position: relative;
   color: white;
   display: flex;
   /* background: linear-gradient(
@@ -156,6 +157,14 @@ header .nav-bar .links li a:hover {
   height: 200px;
   width: 300px;
 }
+.descripcion {
+  background-color: rgb(60, 93, 67);
+}
+.descripcion .h1 {
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+}
 .conteiner-lg p {
   display: flex;
   margin: auto;
@@ -166,39 +175,79 @@ header .nav-bar .links li a:hover {
   border-bottom-right-radius: 40px;
   box-shadow: solid 5px rgb(0, 0, 0);
 }
-.sub-conteiner,.conteiner-lg{
+.sub-conteiner,
+.conteiner-lg {
   padding-left: 4rem;
   padding-right: 4rem;
 }
-.img-obj img {
-  width: 300px;
+.centro-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-.sub-conteiner section,
-.descripcion {
+.centro-content img {
+  display: flex;
   background-color: #3333;
-  padding: 12px;
+  width: 300px;
+  border-radius: 50%;
+}
+.centro-content h4 {
+  font-weight: bold;
+}
+.centro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 205, 240, 0.552);
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.centro-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+}
+.centro p {
+  margin: auto;
+}
+.centro-2 p {
+  margin-left: 20px;
+}
+.sub-conteiner section {
+  background-color: #3333;
+  padding: 16px;
   justify-content: center;
   align-items: center;
 }
 .descripcion h1 {
-  margin-left: 1rem;
-  
+  font-weight: bold;
 }
 .conteiner-sm {
   display: flex;
   position: relative;
   justify-content: space-around;
 }
-.conteiner-sm img{
+.conteiner-sm img {
   width: 100%;
   height: 200px;
 }
-.card {
-  background-color:#198754;
+.container-md img {
+  width: 200px;
+  height: 200px;
 }
+.card {
+  background-color: #56dab7;
+  position: relative;
+}
+
 .carousel {
-  width: 124vh;
-  margin-left: 4rem;
+  margin: 4rem;
 }
 .ubicacion-conteiner {
   max-width: 100%;
@@ -217,6 +266,9 @@ header .nav-bar .links li a:hover {
     flex-direction: column;
     justify-content: center;
   }
+  .conteiner-lg .h1 {
+    margin-left: 0;
+  }
   .conteiner-lg img {
     width: 257px;
   }
@@ -226,7 +278,20 @@ header .nav-bar .links li a:hover {
   .descripcion h1 {
     margin-left: 0;
   }
-  .nav{
+  .centro-content {
+    display: block;
+  }
+  .centro {
+    display: block;
+  }
+  .centro-content img {
+    width: 272px;
+    border-radius: 50%;
+  }
+  .centro-2 {
+    display: block;
+  }
+  .nav {
     display: none;
   }
   .conteiner-lg .descripcion,
@@ -237,15 +302,17 @@ header .nav-bar .links li a:hover {
   .img-top {
     border: none;
   }
-  .sub-conteiner,section {
+  .sub-conteiner,
+  section {
     margin: 0;
   }
   .conteiner-sm {
     display: block;
     padding-bottom: 35px;
   }
+
   .conteiner-sm img {
-    width: 280px;
+    width: 100%;
   }
   .card-ubi iframe {
     width: 300px;
@@ -258,4 +325,77 @@ header .nav-bar .links li a:hover {
 }
 .fa-play {
   color: yellowgreen;
+}
+
+/* footer */
+.footer-item {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+}
+.item {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 1px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.776);
+  height: 265px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.item-img {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.item-body {
+  position: absolute;
+  top: 42%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 75%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(315deg, #000000, #61565a);
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  overflow: hidden;
+}
+
+.item:hover .item-body {
+  transform: rotateX(0deg);
+  overflow: hidden;
+}
+
+.item .item-body h5 {
+  color: rgb(255, 246, 246);
+}
+
+.item .item-body a {
+  position: relative;
+  padding: 2px;
+  border-radius: 20px;
+  width: 24px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+.item-body a i {
+  color: white;
 }
