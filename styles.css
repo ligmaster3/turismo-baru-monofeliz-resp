@@ -245,9 +245,8 @@ header .nav-bar .links li a:hover {
   background-color: #56dab7;
   position: relative;
 }
-
 .carousel {
-  margin-left: 4rem;
+  margin: 4rem;
 }
 .ubicacion-conteiner {
   max-width: 100%;
