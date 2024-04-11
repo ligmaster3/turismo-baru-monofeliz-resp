@@ -454,3 +454,110 @@ header .nav-bar .links li a:hover {
     font-size: 14px;
   }
 }
+
+footer {
+  max-width: 100%;
+  background: #10182f;
+  border-radius: 6px;
+  color: #ffff;
+  text-align: center;
+}
+
+.container-footer {
+  padding: 10px 20px 20px 10px;
+}
+
+.container-social {
+  position: relative;
+  display: flex;
+}
+
+.social-icon {
+  position: relative;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icon span {
+  position: absolute;
+  top: 44%;
+  left: 6%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s;
+}
+
+.social-icon:hover span {
+  transform: translate(-10%, -135%) scale(1);
+}
+
+.text-description {
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.social {
+  color: #ffff;
+  cursor: pointer;
+  font-size: 3vh;
+  margin: 30px 10px 15px 10px;
+  padding: 10px;
+}
+
+.social:hover {
+  backdrop-filter: blur(20px);
+  background: transparent;
+  background-color: rgba(111, 105, 105, 0.649);
+  border: 1px solid rgba(255, 255, 255, 0.215);
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+  justify-content: center;
+  position: relative;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+
+.fa-twitter:hover {
+  background-color: #46c1f6;
+}
+
+.fa-facebook:hover {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #463cd2,
+    #4c3ab4,
+    #3582c1,
+    #7130e1,
+    #4f1ffd
+  );
+}
+
+.fa-github:hover {
+  background: linear-gradient(
+    45deg,
+    #2a2a2b,
+    #151516,
+    #312f31,
+    #2a292a,
+    #181717,
+    #1b1919
+  );
+}
+
+@media (max-width: 1040px) {
+  .social {
+    font-size: 3vh;
+  }
+}
