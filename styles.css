@@ -456,6 +456,7 @@ header .nav-bar .links li a:hover {
 }
 
 footer {
+  height: 370px;
   max-width: 100%;
   background: #10182f;
   border-radius: 6px;
@@ -559,5 +560,8 @@ footer {
 @media (max-width: 1040px) {
   .social {
     font-size: 3vh;
+  }
+  footer {
+    height: 500px;
   }
 }
